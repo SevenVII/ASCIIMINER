@@ -2,6 +2,7 @@ extends layout
 
 block header
     div#header
+        .title ASCII MINER
 
 block map
     div#map
@@ -9,7 +10,7 @@ block map
             - var count=0;
             - for(var x=0;x<30;x++)
                 - for(var y=0;y<30;y++)
-                    div(class='cell'+count) G
+                    span(class='cell'+count) T
                     - count++;
                 .newline
 

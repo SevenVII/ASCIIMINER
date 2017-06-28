@@ -1,3 +1,5 @@
+@cellwidth: 20px;
+
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     width: 1080px;
@@ -22,14 +24,14 @@ a {
 }
 
 #map{
-    width: 65%;
-    height: 550px;
+    width: 600px;
+    height: 600px;
     float: left;
 }
 
 #character{
-    width: 25%;
-    height: 550px;
+    width: 380px;
+    height: 600px;
     float: right;
 }
 
@@ -46,13 +48,11 @@ a {
     display: table;
 }
 
-#maptable .cell{
-    border: 1px solid red;
-    margin: 1px;
-    width: 15px;
-    height: 15px;
-}
-
-.newline{
-    display: block;
+#maptable span{
+    width: @cellwidth;
+    height: @cellwidth;
+    line-height: @cellwidth;
+    float: left;
+    //border: 1px solid darkblue;
+    text-align: center;
 }
