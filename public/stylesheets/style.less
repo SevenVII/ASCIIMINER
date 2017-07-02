@@ -1,4 +1,6 @@
 @cellwidth: 20px;
+@tinyfontsize: 13pt;
+@equipmentwidth: 64px;
 
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -15,12 +17,14 @@ a {
     margin-top: 10px;
     height: 100px;
     padding: 20px;
+    background: #BDBDBD;
 }
 
 #map, #character, #resources, #footer{
     border: 1px solid black;
     margin: 10px 0;
     padding: 20px;
+    background: #BDBDBD;
 }
 
 #map{
@@ -81,4 +85,19 @@ a {
 #mainbar a:hover{
     background: #9FF781;
     color: saddlebrown;
+}
+
+#equipment, #skills{
+    font-size: @tinyfontsize;
+}
+
+#helmet, #overall, #gloves, #pickaxe, #boots{
+    width: @equipmentwidth;
+    height: @equipmentwidth;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#helmet, #overall, #boots{
+    margin: 5px auto;
 }
