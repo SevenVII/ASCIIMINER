@@ -2,8 +2,8 @@ extends layout
 
 block header
     div#header
-        .title ASCII MINER
         div#mainbar
+            span#title ASCII MINER
             a Home
             a New Game
             a Reset
@@ -22,18 +22,31 @@ block map
 block character
     div#character
         div#equipment
-            div#helmet Helmet
-            div#overall Overall
-            div#gloves Gloves
-            div#boots Boots
-            div#pickaxe Pickaxe
+            div.boxcharacter
+                span Helmet:
+                span#helmet
+            div.boxcharacter
+                span Overall:
+                span#overall
+            div.boxcharacter
+                span Gloves:
+                span#gloves
+            div.boxcharacter
+                span Boots:
+                span#boots
+            div.boxcharacter
+                span Pickaxe:
+                span#pickaxe
         div#skills
-            div#strength Strength:
-            div#dexterity  Dexterity:
-            div#luck Luck:
+            div.boxcharacter
+                span Strength:
+                span#strength █ █ █ █ █ █
+            div.boxcharacter
+                span Dexterity:
+                span#desterity █ █
+            div.boxcharacter
+                span Luck:
+                span#luck █ █ █ █
 
 block resources
     div#resources
-
-block footer
-    div#footer
