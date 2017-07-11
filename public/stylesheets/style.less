@@ -1,6 +1,7 @@
 @cellwidth: 20px;
 @tinyfontsize: 13pt;
-@widthdefinedcell: 25%;
+@widthdefinedcell: 20%;
+@bgcoloryellow: #F2F5A9;
 
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -15,7 +16,7 @@ a {
 #header{
     border: 1px solid black;
     margin-top: 10px;
-    height: 40px;
+    height: 30px;
     padding: 10px;
     background: #BDBDBD;
 }
@@ -40,7 +41,7 @@ a {
 }
 
 #resources{
-    height: 200px;
+    height: 170px;
     clear: both;
 }
 
@@ -74,10 +75,10 @@ a {
     border: 1px solid black;
     float: left;
     font-size: 16pt;
-    padding: 3px;
+    padding: 2px;
     margin: 0 50px;
     color: saddlebrown;
-    background: #F2F5A9;
+    background: @bgcoloryellow;
     cursor: pointer;
 }
 
@@ -91,19 +92,31 @@ a {
 }
 
 .boxcharacter{
-    border: 1px solid black;
+    border: 1px dashed black;
     margin: 10px 0;
     width: 100%;
 }
 
 .boxcharacter p:nth-child(1){
-    background: red;
     width: @widthdefinedcell;
+    background: @bgcoloryellow;
     float: left;
 }
 
 .boxcharacter p:nth-child(2){
-    background: orange;
+    padding-left: 5px;
     width: 70%;
     margin-left: @widthdefinedcell;
+}
+
+#strength{
+    color: red;
+}
+
+#dexterity{
+    color: blue;
+}
+
+#lucky{
+    color: #9FF781;
 }
