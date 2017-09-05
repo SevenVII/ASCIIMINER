@@ -1,4 +1,4 @@
-@cellwidth: 20px;
+@cellwidth: 18px;
 @tinyfontsize: 13pt;
 @widthdefinedcell: 20%;
 @bgcoloryellow: #F2F5A9;
@@ -55,7 +55,29 @@ a {
     line-height: @cellwidth;
     float: left;
     text-align: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
 }
+
+.loopRightLine(@counter: 1) when (@counter <= 900) {
+    .loopRightLine(@counter + 30);
+    &.cell@{counter}{
+        border-right: 1px solid black;
+    }
+
+}
+
+.loopRightLine(30);
+
+.loopBottomLine(@counter: 871) when (@counter <= 900) {
+    .loopBottomLine(@counter + 1);
+    &.cell@{counter}{
+        border-bottom: 1px solid black;
+    }
+}
+
+.loopBottomLine();
+
 #title{
     font-size: 18pt;
     text-align: center;
@@ -118,6 +140,6 @@ a {
     color: blue;
 }
 
-#lucky{
+#lucky {
     color: #9FF781;
 }

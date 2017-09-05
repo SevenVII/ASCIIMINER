@@ -11,13 +11,13 @@ block header
 block map
     div#map
         div#maptable
-            - var count=0;
+            - var count=1;
             - for(var x=0;x<30;x++)
                 - for(var y=0;y<30;y++)
-                    span(class='cell'+count) ◻
+                    span(class='cell'+count) &nbsp;
                     - count++;
                 .newline
-
+        div#debug
 
 block character
     div#character
