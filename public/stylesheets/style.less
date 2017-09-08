@@ -1,4 +1,4 @@
-@cellwidth: 18px;
+@cellwidth: 28px;
 @tinyfontsize: 13pt;
 @widthdefinedcell: 20%;
 @bgcoloryellow: #F2F5A9;
@@ -54,6 +54,7 @@ a {
     width: @cellwidth;
     height: @cellwidth;
     line-height: @cellwidth;
+    font-size: 15pt;
     float: left;
     text-align: center;
     border-top: 1px solid black;
@@ -65,17 +66,17 @@ a {
 
 }
 
-.loopRightLine(@counter: 1) when (@counter <= 900) {
-    .loopRightLine(@counter + 30);
+.loopRightLine(@counter: 1) when (@counter <= 400) {
+    .loopRightLine(@counter + 20);
     &.cell@{counter}{
         border-right: 1px solid black;
     }
 
 }
 
-.loopRightLine(30);
+.loopRightLine(20);
 
-.loopBottomLine(@counter: 871) when (@counter <= 900) {
+.loopBottomLine(@counter: 381) when (@counter <= 400) {
     .loopBottomLine(@counter + 1);
     &.cell@{counter}{
         border-bottom: 1px solid black;
